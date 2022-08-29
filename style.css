@@ -9,6 +9,7 @@
 }
 body{
     background-color: #fff;
+    height: auto;
 }
 h1{
     color: hsl(229, 31%, 21%);
@@ -149,7 +150,7 @@ z-index: 1;
 transition: all 0.5s ease;
 }
 .social_media_nav{
-    height: 75vh;
+    height: 60vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -200,11 +201,12 @@ transition: all 0.5s ease;
 }
 
 .main{
-    padding: 0px 5%;
     overflow: hidden;
+    min-height: auto;
 }
 .bookmark_section{
     display: flex;
+    padding: 0px 5%;
 }
 .bookmark_text_section{
 display: flex;
@@ -330,6 +332,7 @@ position: relative;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 0px 5%;
 }
 .features_section h2{
     font-size: 35px;
@@ -360,6 +363,7 @@ width: 43%;
 
 .tabs_section{
 height: 550px;
+padding: 0px 5%;
 }
 .tab_section{
     display: grid;
@@ -512,6 +516,7 @@ line-height: 70px;
  .extension_section{
 display: flex;
 flex-direction: column;
+padding: 0px 5%;
  }
  .extension_head{
 text-align: center;
@@ -584,6 +589,9 @@ align-items: center;
     margin-top: 20px;
  }
  @media screen and (max-width: 960px){
+    .extension_head{
+        height: 220px;
+    }
     .extension_head p{
         line-height: 30px;
         width: 95%;
@@ -608,11 +616,12 @@ align-items: center;
  }
 
  .FAQ{
-height: 620px;
+min-height: 600px;
 display: flex;
 flex-direction: column;
     align-items: center;
     margin-top: 50px;
+    padding: 0px 5%;
  }
  .FAQ_head{
     text-align: center;
@@ -668,7 +677,7 @@ list-style-type: none;
     padding: 20px 0px;
  }
  .more_info_section{
-    height: 80px;
+    height: 120px;
     margin: 0px auto;
     display: flex;
     justify-content: center;
@@ -680,7 +689,7 @@ list-style-type: none;
  }
  @media screen and (max-width: 960px){
     .FAQ{
-        height: 700px;
+        min-height: auto;
          }
     .FAQ_head p{
         width: 95%;
@@ -710,6 +719,7 @@ background-color: hsl(231, 69%, 60%);
 display: flex;
 flex-direction: column;
 justify-content: center;
+z-index: 444;
 }
 .sign-up_section p{
     color: #fff;
@@ -868,6 +878,12 @@ cursor: pointer;
     .attribution a { color: hsl(228, 45%, 44%); }
 
     @media screen and (max-width: 960px){
+       footer{
+        position: relative;
+        bottom: 0;
+        top: 120px;
+        width: 100%;
+        }
         .footer_contents{
             text-align: center;
             justify-content: center;
